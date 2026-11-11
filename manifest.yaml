@@ -1,0 +1,48 @@
+id: sonos-now-playing
+name: Sonos Now Playing
+summary: What's playing on your Sonos
+desc: Shows the song title, artist and album art playing on your Sonos speakers. Shows nothing when no music is playing.
+author: messina22
+refresh_interval_seconds: 30
+credentials:
+  - id: client_id
+    owner: user
+    provider: api.sonos.com
+    required: true
+  - id: client_secret
+    owner: user
+    provider: api.sonos.com
+    required: true
+  - id: refresh_token
+    owner: user
+    provider: api.sonos.com
+    required: true
+network_hosts:
+  # Sonos sign-in and Control API
+  - api.sonos.com
+  - api.ws.sonos.com
+  # Album art CDNs (must match ART_HOSTS in main.star)
+  - i.scdn.co
+  - mosaic.scdn.co
+  - image-cdn-ak.spotifycdn.com
+  - image-cdn-fa.spotifycdn.com
+  - is1-ssl.mzstatic.com
+  - is2-ssl.mzstatic.com
+  - is3-ssl.mzstatic.com
+  - is4-ssl.mzstatic.com
+  - is5-ssl.mzstatic.com
+  - m.media-amazon.com
+  - images-na.ssl-images-amazon.com
+  - resources.tidal.com
+  - lh3.googleusercontent.com
+  - yt3.ggpht.com
+  - i.ytimg.com
+  - cdn-profiles.tunein.com
+  - cdn-radiotime-logos.tunein.com
+  - e-cdns-images.dzcdn.net
+  - cdn-images.dzcdn.net
+  - i1.sndcdn.com
+  - f4.bcbits.com
+  - static.qobuz.com
+  - content-images.p-cdn.com
+  - i.iheart.com
